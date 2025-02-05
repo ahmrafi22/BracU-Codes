@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align content at the top */
+    min-height: 100vh;
+    background-color: #4AFFF7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%2313FFFF' stroke-width='14.2' stroke-opacity='0.05' %3E%3Ccircle fill='%234AFFF7' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%2345f4ee' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%233feae5' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%233bdfdc' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%2336d5d3' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%2332caca' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%232dc0c1' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%2329b6b8' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%2326acaf' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2322a2a6' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%231f989d' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%231c8f94' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2319858b' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23177b82' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23147279' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23126970' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23106067' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%230E575E' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 80px; /* Space to account for the fixed navbar */
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    color: whitesmoke;
+    position: fixed;
+    top: 10px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(17, 25, 40, 0.85);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-content img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px; /* Space between image and login button */
+}
+
+.nav-content a {
+    padding: 5px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+
+
+.app_container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center; 
+    align-items: center; 
+    width: 80%;
+    height: 60vh; 
+    max-width: 1200px; 
+    margin-top: 10vh; 
+    margin-bottom:3vh;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.app2_container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center; 
+    align-items: center; 
+    width: 80%;
+    min-height: 40vh; 
+    max-width: 1200px; 
+    margin-top: 5vh; 
+    margin-bottom: 4vh;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.app2_container h1{
+    color: white;
+}
+
+.logout-btn {
+    margin-top: 1vh;
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.app_container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.profile-section h1, .cars-section h1 {
+    margin-bottom: 2vh;
+    color: white;
+}
+
+
+.profile-section, .cars-section {
+    width: 50%;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.update-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.appointments-table {
+    margin-top: 3vh;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+ 
+.appointments-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: white;
+    text-align: left;
+}
+
+.appointments-table th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.add-car-btn {
+    background-color: #18dd22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 8vh;
+}
+
+.car-details{
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.delete-car-section {
+    margin-top: 20px;
+    padding: 15px;
+}
+.delete-car-form {
+    margin-top: 4.5vh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.delete-btn {
+    background-color: #ff4444;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: #ff0000;
+}
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
