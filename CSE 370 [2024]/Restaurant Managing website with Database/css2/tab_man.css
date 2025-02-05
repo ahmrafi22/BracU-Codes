@@ -1,0 +1,141 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    opacity: 100%;
+    background-image: url('../images/admin_backgoround2.jpg');
+}
+.container {
+    background: rgba(30, 60, 114, 0.7);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+h1, h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+    margin-right: 20px;
+}
+.bn632-hover:focus {
+    outline: none;
+}
+.bn632-hover.table-confirmation {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.bn632-hover.inventory-management {
+    background-image: linear-gradient(to right, #fc6076, #ff66b2, #ff99cc, #ffb3e6);
+    box-shadow: 0 4px 15px 0 rgba(255, 102, 178, 0.75);
+}
+.bn632-hover.order-confirmation {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6b8dd6, #8e37d7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.bn632-hover.menu-management {
+    background-image: linear-gradient(to right, #c4a661, #d1b67e, #e2cba1, #f1e0c1);
+    box-shadow: 0 4px 15px 0 rgba(196, 166, 97, 0.75);
+}
+.bn632-hover.logout-button {
+    background-image: linear-gradient(to right, #ff0000, #ff4500, #ff6347, #ff1493);
+    box-shadow: 0 4px 15px 0 rgba(255, 0, 0, 0.75);
+}
+.bn632-hover.admin-dashboard {
+    background-image: linear-gradient(to right, #00bfff, #87cefa, #ffd700, #ffeb3b);
+    box-shadow: 0 4px 15px 0 rgba(0, 191, 255, 0.75);
+}
+.bn632-hover img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.bn632-hover {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 60px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.bn632-hover:hover {
+    background-position: 100% 0;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: right;
+}
+
+.confirm-btn, .cancel-btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 500px;
+    overflow: hidden;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.confirm-btn {
+    background: #30dd8a;
+}
+.cancel-btn {
+    background: #ff4500;
+}
+.confirm-btn:hover, .cancel-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.confirm-btn:active, .cancel-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.content-area {
+    flex-grow: 1;
+    padding-left: 20px;
+}

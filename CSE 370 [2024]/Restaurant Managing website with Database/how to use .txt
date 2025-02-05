@@ -1,0 +1,15 @@
+1.paste this folder to C:\xampp\htdocs\ 
+2. create a new database in localhost/phpMyAdmin 
+3. create new database name (must be this name or change name in db_connection.php) : restudb
+4. import Finalfin.sql
+5. run localhost/Afinal
+
+
+admin : user id : admin pass : admin123 
+
+user : user id : 
+1. rafi_ahmed123
+2. nahiyan_khan456  
+3. khan_mahi789
+
+pass for any userid : 111111

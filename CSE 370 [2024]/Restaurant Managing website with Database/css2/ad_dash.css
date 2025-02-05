@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    opacity: 100%;
+    background-image: url('../images/admin_backgoround2.jpg'); 
+}
+.container {
+    background: rgba(30, 60, 114, 0.7);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.dashboard-content {
+    flex: 1;
+}
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.dashboard-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.dashboard-item:hover {
+    transform: translateY(-5px);
+}
+.dashboard-item h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+.dashboard-item p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.dashboard-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+    margin-right: 20px;
+}
+.bn632-hover {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 60px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.bn632-hover:hover {
+    background-position: 100% 0;
+}
+.bn632-hover:focus {
+    outline: none;
+}
+.bn632-hover.table-confirmation {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.bn632-hover.inventory-management {
+    background-image: linear-gradient(to right, #fc6076, #ff66b2, #ff99cc, #ffb3e6);
+    box-shadow: 0 4px 15px 0 rgba(255, 102, 178, 0.75);
+}
+
+.bn632-hover.order-confirmation {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6b8dd6, #8e37d7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.bn632-hover.menu-management {
+    background-image: linear-gradient(to right, #c4a661, #d1b67e, #e2cba1, #f1e0c1);
+    box-shadow: 0 4px 15px 0 rgba(196, 166, 97, 0.75);
+}
+
+.bn632-hover.logout-button {
+    background-image: linear-gradient(to right, #ff0000, #ff4500, #ff6347, #ff1493);
+    box-shadow: 0 4px 15px 0 rgba(255, 0, 0, 0.75);
+}
+.bn632-hover.admin-dashboard {
+    background-image: linear-gradient(to right, #00bfff, #87cefa, #ffd700, #ffeb3b);
+    box-shadow: 0 4px 15px 0 rgba(0, 191, 255, 0.75);
+}
+
+.bn632-hover img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.stars {
+    font-size: 24px;
+    color: gold;
+}
+#salesChart {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: right;
+}

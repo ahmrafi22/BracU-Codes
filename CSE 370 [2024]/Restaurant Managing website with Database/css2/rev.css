@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #f9f9f9 100%);
+    padding-top: 60px;
+
+    background-size: contain ; /* Or use 'contain' depending on your preference */
+    background-position: center;
+    background-repeat: repeat;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    color: #155724;
+}
+.success, .error {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.success {
+    background-color: #D4EDDA;
+    color: #155724;
+}
+.error {
+    background-color: #F8D7DA;
+    color: #721C24;
+}
+.review-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+.review-form h2 {
+    text-align: center;
+    color: #333;
+}
+.review-form textarea, .review-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.review-form textarea {
+    height: 100px; 
+}
+.reviews-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.review-box {
+    width: calc(50% - 20px);
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    box-sizing: border-box;
+}
+.review-box h3 {
+    text-align: left;
+    padding-bottom: 10px;
+    color: #333;
+}
+.review-box p {
+    color: #666;
+}
+.review-box small {
+    color: #999;
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+}
+.cssbuttons-io-button svg {
+    margin-right: 6px;
+}
+.cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em rgba(0, 0, 0, 0.1);
+}
+.cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em rgba(0, 0, 0, 0.1);
+}
+.add-update-button {
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+}
+.delete-button {
+    background: linear-gradient(0deg, rgba(220, 53, 69, 1) 0%, rgba(255, 107, 107, 1) 100%);
+    box-shadow: 0 0.7em 1.5em -0.5em #dc354598;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+.modal-buttons {
+    margin-top: 20px;
+}
+.modal-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal-confirm {
+    background-color: #dc3545;
+    color: white;
+}
+.modal-cancel {
+    background-color: #6c757d;
+    color: white;
+}
