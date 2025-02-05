@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>JavaScript Tasks</h1>
+            <p>Refresh the page for a new quote!</p>
+        </div>
+
+        <div id="quote-box" class="quote-box">
+        </div>
+
+        <div class="color-buttons">
+            <button onclick="setTheme('#1e40af', '#3b82f6', '#dbeafe', 'Roboto' , '1.4rem')" class="color-btn1 " style="background-color: #3b82f6;"></button>
+            <button onclick="setTheme('#166534', '#22c55e', '#dcfce7', 'Oswald', '1.9rem')" class="color-btn2 " style="background-color: #22c55e;"></button>
+            <button onclick="setTheme('#5b21b6', '#8b5cf6', '#f3e8ff', 'Palatino', '1.65rem')" class="color-btn3 " style="background-color: #8b5cf6;"></button>
+            <button onclick="setTheme('#9f1239', '#fb7185', '#ffe4e6', 'Helvetica', '2rem')" class="color-btn4 " style="background-color: #fb7185;"></button>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h2>Weight Converter</h2>
+        <div class="input-group">
+            <label for="weightInput">Enter Weight:</label>
+            <input type="number" id="weightInput" placeholder="Enter value">
+            <select id="conversionType">
+                <option value="kgToLbs"  >Kilograms to Pounds</option>
+                <option value="lbsToKg"  >Pounds to Kilograms</option>
+            </select>
+            <button onclick="convert()" class="button1">Convert</button>
+        </div>
+        <div id="result1" class="result-container">
+            <h3>Result:</h3> <span id="result"></span>
+        </div>
+    </div>
+
+    <div class="container3">
+        <h2>Number Statistics Calculator</h2>
+        <div class="input-group">
+            <input type="text" id="numberInput" placeholder="Enter numbers separated by commas (e.g., 1,2,3,4,5)">
+        </div>
+        <div class="results">
+            <div class="result-item">
+                <span class="result-label">Maximum:</span>
+                <span id="max">-</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Minimum:</span>
+                <span id="min">-</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Sum:</span>
+                <span id="sum">-</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Average:</span>
+                <span id="average">-</span>
+            </div>
+            <div class="result-item" style="grid-column: 1 / -1;">
+                <span class="result-label">Reverse Order:</span>
+                <span id="reverse">-</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container4">
+        <h2>Magic!</h2>
+    <textarea id="text"></textarea>
+        <div class="buttons">
+           <button class="clear-btn" onclick="toggleManipulation('clear')">Clear</button>
+           <button class="capitalize-btn" onclick="toggleManipulation('capitalize')">Capitalize</button>
+           <button class="sort-btn" onclick="toggleManipulation('sort')">Sort</button>
+           <button class="reverse-btn" onclick="toggleManipulation('reverse')">Reverse</button>
+           <button class="strip-btn" onclick="toggleManipulation('stripBlank')">Strip Blank</button>
+           <button class="number-btn" onclick="toggleManipulation('addNumbers')">Add Numbers</button>
+           <button class="shuffle-btn" onclick="toggleManipulation('shuffle')">Shuffle</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+    
+</html>

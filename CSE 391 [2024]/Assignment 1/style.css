@@ -1,0 +1,648 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    background: linear-gradient(to right, #000000, #333333, #000000);
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+    
+}
+
+#main{
+
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    padding-top: 1px;
+}
+
+#nav{
+    color: white;
+    height: 8vh;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav h2{
+    height: 100%;
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Atomic Age", system-ui;;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#nav h2::after{
+    content:'';
+    width: 0 ;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 3;
+    bottom: 17px;
+    transition: width .3s;
+}
+  
+#nav h2:hover::after{
+    width: 35%;
+}
+
+
+#nav h1{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Atomic Age", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+}
+
+#nav h1:hover {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 80%);
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+#about{
+    height: 80%;
+    width: 100%;
+    padding: 1vw;
+    display: flex;
+    position: relative;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    background: linear-gradient(to left, #000000, #333333, #464545);
+}
+
+#about #inside1{
+    display: flex;
+    gap: 2rem;
+    height: 90%;
+    width: 80%;
+    position: relative;
+    border-radius: 12px;
+    box-shadow:  0px 5px 15px 0px rgba(255, 255, 255, 0.4);
+    background-image:url(https://img.freepik.com/free-photo/abstract-paper-background-concept_23-2148812673.jpg?t=st=1731248481~exp=1731252081~hmac=f206832cb14ec5a495d382d14a94bbc2aa1b93f3566ad39e9f54bb95d01c536b&w=1060);
+}
+
+#about #inside1 .left{
+    color: rgb(61, 70, 69);
+    height: 80%;
+    width: 47%;
+    min-width: 40%;
+    background: rgba(223, 204, 204, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+    padding-top: 1px;
+    text-align: center;
+    transition: transform .3s;
+    animation: appear 1s linear;
+}
+
+#about #inside1 .left:hover{
+    transform: translateY(-.25rem);
+}
+
+
+#about #inside1 .left h1{
+    margin-top: 20px;
+    font-family: "Atomic Age", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#about #inside1 .left p{
+    margin-left: 20px;
+    font-family: "Bad Script", cursive;
+    font-weight: 999;
+    font-style: normal;
+    font-size: 1.2vw;
+    margin-right: 1.5rem;
+}
+
+#about #inside1 .left hr{
+    background-color: rgb(0, 0, 0);
+    width: 60%;
+    height: 3px;
+    margin-left: 7.8rem;
+}
+
+
+#about #inside1 .right img{
+    height: 250px;
+    width: 250px; 
+    border-radius: 50%;
+    margin-top: 0.4rem;
+    margin-left:0.2rem;
+    text-align: center;
+    transition: transform .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: appear 1s linear;
+}
+#about #inside1 .right .rightimg{
+    height: 300px;
+    width: 300px; 
+    background: rgba(223, 204, 204, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50%;
+    margin-top: 17rem;
+    margin-left:21rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#about #inside1 .right img:hover{
+    transform: translateY(-.25rem);
+}
+
+
+#hobbies{
+    height: 100%;
+    width: 100%;
+    padding: 1vw;
+    display: flex;
+    position: relative;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+    background: linear-gradient(to right, #000000, #333333, #464545);
+}
+
+#hobbies .left{
+    height: 73%;
+    width: 30%;
+    position: absolute;
+    background-image: url(https://i.ibb.co.com/bF6SgMk/greebg.jpg);
+    background-size: contain; 
+    background-position: bottom; 
+    border-radius: 12px;
+    left: 10%;
+    transition: transform .3s;
+    box-shadow:  0px 10px 15px 0px rgba(50, 238, 50, 0.4);
+}
+
+#hobbies .left .box{
+    height: 80%;
+    width: 75%;
+    justify-self: center;
+    margin-top: 4rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.125);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    animation: appear 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    
+}
+
+#hobbies .left .box h2{
+    color: white;
+    margin-top: 16px;
+    margin-left: 16vh;
+    font-family: "Atomic Age", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#hobbies .left .box ul li{
+    color: white;
+    margin-left: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 2.2vh;
+    margin-bottom: 5vh;
+}
+
+strong{
+    font-weight: 800;
+}
+
+
+
+#hobbies .right{
+    height: 75%;
+    width: 45%;
+    position: absolute;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    right: 5%;
+    padding: 20px;
+    transition: transform .3s;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0px 5px 15px 0px rgba(255, 255, 255, 0.4);
+}
+
+#hobbies .right img {
+    width: calc(50% - 20px);  
+    height: calc(50% - 20px);  
+    object-fit: cover;  
+    border-radius: 8px;  
+    rotate: -3deg;
+    transition: transform 0.3s ease;
+    animation: appear 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+#hobbies .left:hover {
+    transform: translateY(-.25rem);
+}
+
+#hobbies .right img:hover{
+    transform: rotate(3deg);
+}
+
+#favourites{
+    height: max-content;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30PX;
+}
+
+.favleft{
+    width: 30%;
+    background-image: 
+       linear-gradient(rgba(214, 175, 175, 0.5), rgba(226, 205, 205, 0.5)), 
+       url(https://img.freepik.com/free-photo/close-up-wooden-ukulele-yellow-background_23-2147926813.jpg?t=st=1731393029~exp=1731396629~hmac=7d66703b27f190e729851abe992774ac0ad64197706fdeb54908776ed0a1bad4&w=740);
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: overlay;
+    border-radius: 12px;
+
+    margin-top: 7vh;
+    margin-left: 34vw;
+    display: flex;
+    box-shadow:  0px 5px 15px 0px rgba(207, 253, 3, 0.4);
+    transition: transform 0.3s ease ;
+    
+}
+
+.favleftbox{
+    width: 85%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    align-self: center;
+    margin-left: 5.5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    animation: appear 1s linear;
+  
+
+}
+
+.favleft:hover{
+    transform: translateY(-.25rem);
+}
+
+.favleftbox h2{
+    font-family: "Atomic Age", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3vh;
+    margin-left: 4vh;
+    font-size: 5vh;
+}
+
+.favleftbox li{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 3vh;
+    margin: 2vh 0 3vh 6vh;
+}
+
+.favright{
+    height: 90%;
+    width: 90%;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    border-radius: 12px;
+
+}
+
+.favrightbox{
+    height: 102%;
+    width: 92%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    margin-left: 80px;
+    box-shadow:  0px 5px 15px 0px rgba(255, 255, 255, 0.4);
+}
+
+table {
+    width: 95%;
+    margin: 15px 0 20px 30px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: appear 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+table caption{
+    color: white;
+    margin-top: -4px;
+    margin-bottom: 10px;
+    font-family: "Atomic Age", system-ui;;
+    font-size: 5vh;
+}
+
+th, td {
+    padding: 25px 21px;
+    text-align: center;
+    border: 3px solid #ffffff;
+}
+
+td:hover{
+    background-color: #333333;
+}
+
+th {
+    color: white;
+    font-size: 2em;
+}
+
+.rating {
+    font-weight: bold;
+    color: #d9ff00;
+}
+
+.genre {
+    font-style: italic;
+    color: #ffffff;
+    font-size: 2vh;
+}
+
+.release-date {
+    font-weight: bold;
+    color: #0ff2fa;
+}
+
+.seasons {
+    font-weight: bold;
+    color: #0de266;
+    font-size: 2vh;
+}
+
+.platform-n{
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 2vh;
+}
+
+.platform-p{
+    font-weight: bold;
+    color: #0044ff;
+    font-size: 2vh;
+}
+
+.platform-h{
+    font-weight: bold;
+    color: #b700ff;
+    font-size: 2vh;
+}
+
+.platform-b{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 2vh;
+}
+
+.platform-a{
+    font-weight: bold;
+    color: #a2e624;
+    font-size: 2vh;
+}
+
+.seasons2 {
+    font-weight: bold;
+    color: #ff9a02;
+    font-size: 2vh;
+}
+
+.series-title {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 3vh;
+}
+
+
+
+.favquote{
+    height: 11%;
+    width: 100%;
+    padding-top: 1px;
+    padding-left: 40vh;
+}
+.favbox{
+    height: 95%;
+    width: 70%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    margin-top: 1vh;
+    margin-left: 7.5vh;
+    box-shadow:  0px 5px 15px 0px rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+}
+.favbox h2{
+    margin-left: 6vh;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 1vh;
+    text-decoration: underline;
+
+}
+.quote {
+    font-style: italic;
+    padding: 1rem;
+    width: max-content;
+    border-left: 8px solid rgb(0, 255, 242);
+    margin: 1.7rem 0;
+    margin-left: 4.2vh;
+    font-size: 3vh;
+    color: white;
+    animation: appear 1s linear;
+    
+}
+
+#links{
+    height: 30%;
+    width: 100%;
+    padding-top: 1px;
+    color: white;
+    background-color: #000000;
+}
+
+#links h2{
+    margin-left: 88vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Atomic Age", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 55px;
+    
+}
+
+.linkbox{
+    height: 80%;
+    width: 60%;
+    margin: 1.5vh 0 1vh 40vh;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.link-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.link-item img {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    animation: appear 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.link-item:hover img {
+    transform: scale(1.16);
+}
+
+.link-item span {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    font-family: "Atomic Age", system-ui;;
+}
+
+.brac span {
+    color: #ffffff; 
+}
+.discord span {
+    color: #5865F2; 
+}
+.facebook span {
+    color: #1877F2; 
+}
+.linkedin span {
+    color: #69a7e6; 
+}
+.github span {
+    color: #000000; 
+}
+
+.footer{
+    height: 40%;
+    width: 100%;
+    background-color: #5092e7;
+    padding-top: 4px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    bottom: 0;
+}
+.footer h3{
+    margin-top: 5vh;
+}
+
+
+#clock {
+    font-family: "Moul", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: #eeeeee;
+    margin: 10px 0;
+  }
+  
+  .footer-info {
+    margin: 5px 0;
+  }
+

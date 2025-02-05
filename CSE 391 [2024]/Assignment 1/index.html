@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+        <div id="main">
+            <div id="nav">
+                <h1><a href="index.html">Abt.ME</a></h1>
+                <h2><a href="#about">About</a></h2>
+                <h2><a href="#hobbies">Hobbies</a></h2>
+                <h2><a href="favourites.html">Favourites</a></h2>
+                <h2><a href="#links">Links</a></h2>
+            </div>
+        </div>
+        </nav>
+        <div class="box about" id="about">
+            <div id="inside1">
+                <div class="left">
+                    <h1> 👋 Hello, I'm  <u>Rafi Ahmed</u> </h1> <br>
+                    <br>
+                    <p>A computer science student at BRAC University . This is my 8<sup>th</sup> semester. I have been exploring web technologies and machine learning recently, and I am excited to apply my knowledge to real-world projects. </p>
+                    <br> <br> <br> <br>
+                    <p>I am currenty living in Bangshal Dhaka . My home town is Tangail . My journey at BRAC University has been both challenging and rewarding, and I am excited about what lies ahead and the new possibilities that await.</p>
+                    <br> <br>
+                    <hr>
+                </div>
+                <div class="right">
+                    <div class="rightimg">
+                        <img src="https://img.freepik.com/premium-vector/heartwarming-smile-masks-person-who-is-quick-throw-others-bus-order-save_216520-177387.jpg?semt=ais_hybrid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box hobbies" id="hobbies">
+            <div class="left">
+                <div class="box">
+                    <h2>Hobbies</h2>
+                    <br>
+                    <ul>
+                        <li><strong>Programming</strong> - Building web applications and solving algorithmic problems</li>
+                        <li><strong>Photography</strong> - Capturing moments and exploring visual storytelling</li>
+                        <li><strong>Gaming</strong> - I enjoy strategy , puzzle and FPS games</li>
+                        <li><strong>Reading</strong> - Reading fantasy and thriller books sometimes novels</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <img src="assests/hoby1.gif" alt="">
+                <img src="assests/hoby2.gif" alt="">
+                <img src="assests/hoby3.gif" alt="">
+                <img src="assests/hoby4.gif" alt="">
+            </div>
+        </div>
+
+        <div class="box links" id="links">
+            <h2>Links</h2>
+            <div class="linkbox">
+                <a href="https://www.bracu.ac.bd/" class="link-item brac">
+                    <img src="assests/bracu.png" alt="BRACU">
+                    <span>BRACU</span>
+                </a>
+                <a href="https://discord.gg/2TnJ2HDt" class="link-item discord">
+                    <img src="assests/discord.png" alt="Discord">
+                    <span>Discord</span>
+                </a>
+                <a href="https://facebook.com" class="link-item facebook">
+                    <img src="assests/facebook.png" alt="Facebook">
+                    <span>Facebook</span>
+                </a>
+                <a href="https://linkedin.com" class="link-item linkedin">
+                    <img src="assests/linkedin.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Raf-codes" class="link-item github">
+                    <img src="assests/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3 class="footer-info">Created by M. R. Rafi Ahmed</h3>
+            <h3 class="footer-info">Id: #######</h3>
+            <div id="clock"></div>
+            <div id="location" class="footer-info"></div>
+            <div id="lastModified" class="footer-info"></div>
+        </div>
+        <script>
+            function updateClock() {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString();
+                document.getElementById('clock').textContent = timeString;
+            }
+    
+            setInterval(updateClock, 1000);
+            updateClock(); 
+
+            document.getElementById('location').textContent = 
+                `Current URL: ${window.location.href}`;
+    
+            document.getElementById('lastModified').textContent = 
+                `Last modified: ${document.lastModified}` ;
+        </script>
+    </body>
+</html>
