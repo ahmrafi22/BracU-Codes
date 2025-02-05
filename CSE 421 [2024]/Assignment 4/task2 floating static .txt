@@ -1,0 +1,41 @@
+Part 1 step 1:
+Edge_Router>en
+Edge_Router#config t
+Edge_Router(config)#ip route 0.0.0.0 0.0.0.0 s0/0/0
+Edge_Router(config)#exit
+
+
+Part 1 Step2:
+Edge_Router#config t
+Edge_Router(config)#ip route 0.0.0.0 0.0.0.0 s0/0/1 5
+Edge_Router#show run
+
+
+Part2
+Edge_Router>en
+Edge_Router#config t
+Edge_Router(config)#int s0/0/0
+Edge_Router(config-if)#shut
+
+
+Part 3 step 1:
+Edge_Router#config t
+Edge_Router(config)#ipv6 route ::/0 2001:DB8:A:2::1 5
+Edge_Router(config)#exit
+
+
+Part 3 step 2:
+Edge_Router#config t
+Edge_Router(config)#interface s0/0/0
+Edge_Router(config-if)#shut
+Edge_Router(config-if)#exit
+Edge_Router(config)#exit
+
+Edge_Router#show ipv6 route
+
+
+Edge_Router#config t
+Edge_Router(config)#interface s0/0/0
+Edge_Router(config-if)#no shut
+Edge_Router(config-if)#exit
+Edge_Router(config)#exit

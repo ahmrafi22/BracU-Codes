@@ -1,0 +1,75 @@
+For R1
+
+
+>enable                                                   
+#erase startup-config
+#reload
+                                                                       
+>enable   			             
+#configure terminals              
+#hostname R1   		               
+#no ip domain-lookup
+#enable secret class	 
+#banner motd & ******************************** !!!AUTHORIZED ACCESS ONLY!!! ******************************** &               
+#line console 0
+#password  cisco
+#login			
+#exit
+#line vty 0 4
+#password cisco
+#login
+#exit
+
+
+                                                                                      
+
+#interface fastethernet 0/0                                     
+#ip address 192.168.1.1 255.255.255.0		
+#no shutdown
+
+#interface serial  0/0/0
+#ip address 192.168.2.1 255.255.255.0		
+#clock rate 64000
+#no shutdown
+#end   						
+#copy running-config startup-config	
+#show ip route	
+
+
+
+For R2
+
+
+>enable                                                     
+#erase startup-config
+#reload
+                                                                        
+>enable   			            
+#configure terminals              
+#hostname R2   		
+#no ip domain-lookup
+#enable secret class	 
+#banner motd & ******************************** !!!AUTHORIZED ACCESS ONLY!!! ******************************** &               
+#line console 0
+#password cisco
+#login			
+#exit
+#line vty 0 4
+#password cisco
+#login
+#exit
+
+
+#interface serial  0/0/0                                              
+#ip address 192.168.2.2  255.255.255.0		
+#no shutdown
+
+#interface fastethernet 0/0                                     
+#ip address 192.168.1.1 255.255.255.0		
+#no shutdown
+#end
+#copy running-config startup-config	
+#show ip route
+
+
+
